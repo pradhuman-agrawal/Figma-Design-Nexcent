@@ -1,0 +1,347 @@
+<!-- <img src="image card 1.jpeg" class="slide" alt="">
+    <img src="card image 2.jpeg" class="slide" alt="">
+    <img src="card image3.jpeg" class="slide" alt="">
+    <img src="card image 2.jpeg" class="slide" alt=""> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    :root {
+        /* color  */
+        --mainclr: #008000;
+        --mainafterclr: hsl(167, 81%, 79%);
+    
+        /* natural color  */
+        --Black: #263238;
+        --D_Grey: #4D4D4D;
+        --Grey: #717171;
+        --L_Grey: #89939E;
+        --Grey-blue: #ABBED1;
+        --Silver: #F5F7FA;
+        --White: #FFFFFF;
+        --royalgrey:#212121;
+    
+        /* primary */
+        --Primary: #28CB8B;
+        --Secondary: #263238;
+        --Info: #2194f3;
+    
+        /* green-color-shades  */
+        --Shade1: #43A046;
+        --Shade2: #388E3B;
+        --Shade3: #237D31;
+        --Shade4: #1B5E1F;
+        --Shade5: #103E13;
+    
+        /* color-tint */
+        --Tint1: #66BB69;
+        --Tint2: #81C784;
+        --Tint3: #A5D6A7;
+        --Tint4: #C8E6C9;
+        --Tint5: #E8F5E9;
+    
+        /* action  */
+        --Warning: #FBC02D;
+        --Error: #E53835;
+        --Success: #2E7D31;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 76px;
+        color:var(--royalgrey);
+    }
+    
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        color: var(--royalgrey);
+    }
+    
+    h3 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color:var(--royalgrey);
+    }
+    
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        color:var(--royalgrey);
+    }
+    h5{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        color:var(--royalgrey);
+    }
+    h6{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        color:var(--royalgrey);
+    }
+    
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    
+    }
+    .header {
+        width: 100%;
+        background-color: #F5F7FA;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 99;
+        
+    }
+    
+    .one {
+        display: flex;
+        gap: 0.5rem;
+        color: black;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    nav li {
+        padding: 1.8rem;
+        list-style: none;
+    }
+    
+    nav li a {
+        text-decoration: none;
+    }
+    
+    .three {
+        padding: 1rem;
+    }
+    
+    .L {
+        color: green;
+        border: none;
+        font-size: 1rem;
+        margin: 10px;
+        padding: 7px;
+    }
+    
+    .S {
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+        padding: 7px;
+    }
+    
+    
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+    
+    /* make a craousel  */
+    main {
+    width: 100%;
+    height: 580px;
+    margin: auto;
+    box-shadow: 0px 0px 2px grey;
+    position: relative;
+    overflow: hidden;
+    
+    }
+    
+    .slide {
+        padding-top:80px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: 1s;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        width: 100%;
+        background-color:var(--Silver);
+        gap: 40px;
+    }
+    
+    .left {
+        font-size: 20px;
+        text-align: start;
+        padding-left: 20px;
+        padding: 2rem 1rem;
+    
+    }
+    .left> h1{
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 76px;
+        color:var(--royalgrey);
+        
+    }
+    
+    .left>h2 {
+        /* font-size: 60px;
+        color: #008000;
+        padding-top: 1rem; */
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        color: var(--royalgrey);
+    }
+    
+    
+    
+    
+    
+    .left p{
+        padding-top: 2rem;
+        
+    }
+    .left button{
+        padding: 10px;
+        margin: 10px;
+        background-color: var(--Shade1);
+        border: none;
+    }
+    .left button:hover{
+        color: var(--Silver);
+        background-color: var(--Error);
+    }
+    
+    /* make a clint */
+    
+    .clint {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .clints-logo {
+        font-size: 60px;
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 3rem;
+        color: var(--Grey);
+        cursor: pointer;
+        transition: .3s;
+    
+    }
+    /* .clints-logo>img:hover {
+        color: var(--Black);
+        background-color: var(--Shade1);
+        height: 3rem;
+        border-radius: 50%;
+    } */
+    
+    .nav button{
+        color: var(--Black);
+        background-color: var(--Shade1);
+        border: none;
+        border-radius: 80px;
+    }
+    .nav {
+        text-align: center;
+        margin-top: 15px;
+    
+    }
+    
+    .nav button {
+        font-size: 25px;
+        padding: 5px;
+    }
+    
+    
+    @media screen and (max-width: 430px){
+    
+    
+    
+    
+        /* make a craousel  */
+    main{
+        height: 100vh;
+    }
+    
+    
+        .box {
+            flex-direction: column;
+            height: 110vh;
+            padding-top: 1rem;
+        }
+    
+        .left {
+            text-align: center;
+            font-size: 20px;
+        
+        }
+    
+        .left>h1 {
+            font-size: 38px;
+            padding-bottom: 25px;
+        }
+    
+        .left>button {
+            padding: 1rem 5rem;
+        }
+        .right>img{
+            height: 35vh;
+        }
+    .nav :hover{
+    
+     color: var(--Silver);
+        background-color: var(--Error);
+    
+    }
+    
+    /* make a clint  */
+        .clint {
+            font-size: 30px;
+            padding-top: 90px;
+        }
+    
+    }
